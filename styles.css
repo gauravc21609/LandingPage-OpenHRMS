@@ -13,21 +13,34 @@
   --nav-link:#588157;
 }
 
-.carousel {
-  background-image: url(/person-frontml.jpg);
-  height: 60vh;
-  min-height: 60%;
-  /* background-position: center; */
-  background-repeat: no-repeat;
-  object-fit: cover;
-  position: relative;
-  /* filter: blur(5px); */
-  /* background-blend-mode: ; */
+  .carousel {
+    background-image: url(/person-frontml.jpg);
+    height: 60vh;
+    min-height: 60%;
+    background-size: cover;
+    position: relative;
 }
+
+.carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.7);
+  mix-blend-mode: multiply;
+}
+
 
 .carousel .navbar {
   position: relative;
   z-index: 2;
+  opacity: 1;
+}
+
+.calousel .caption{
+  position: absolute;
 }
 
 .container-fluid .navbar-brand {
@@ -59,21 +72,13 @@
   color: var(--color);
 }
 
-/* 
-.fig-caption{
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-} */
+
 
 .deshboard .manual {
   width: 100%;
   height: 80vh;
   margin: 4em auto;
-  position: absolute;
-  z-index: 1;
   background-color: red;
-  display: block;
 }
 
 .manual > h4 {
