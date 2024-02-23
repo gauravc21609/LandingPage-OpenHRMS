@@ -12,6 +12,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
   <link rel="stylesheet" href="styles.css">
   <title>Document</title>
@@ -20,7 +22,7 @@
 <body>
   <div class="carousel">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-ligh bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
       <div class="container-fluid">
         <a class="navbar-brand d-flex" href="#"> <img src="logo-white.png" alt="Open HRMS" class="nav-brand-pic"> OPEN
           <Strong>HRMS</Strong> </a>
@@ -72,14 +74,14 @@
     <!-- fig caption -->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <h4>MOST ADVANCED OPEN SOURCE HR MANAGEMENT SOFTAWARE</h4>
+        <div class="carousel-item active text-break">
+          <h2 class="display-3">MOST ADVANCED OPEN SOURCE HR MANAGEMENT SOFTAWARE</h2>
         </div>
-        <div class="carousel-item">
-          <H4>SMALL-MEDIUM-LEVEL, LEVEL YPUR BUSINESS SIZE DOESN'T MATTER</H4>
+        <div class="carousel-item text-break">
+          <H2 class="display-3">SMALL-MEDIUM-LEVEL, LEVEL YOUR BUSINESS SIZE DOESN'T MATTER</H2>
         </div>
-        <div class="carousel-item">
-          <H4>SUITABLE FOR ANY INDUSTRY VERTICAL</H4>
+        <div class="carousel-item text-break">
+          <H2 class="display-3">SUITABLE FOR ANY INDUSTRY VERTICAL</H2>
         </div>
       </div>
     </div>
@@ -88,40 +90,100 @@
 
 
   <!-- main body -->
-  <!-- <main>
+  <main>
     <div class="deshboard">
       <div class="manual">
-        <h4>Open HRMS- to attain the growth that you sought</h4>
+        <h2 class="text-break display-6">Open HRMS- to attain the growth that you sought</h2>
         <div class="button">
-          <button name="Live Demo" value="Live Demo" type="button">Live Demo</button>
-          <button name="Download" value="Download" type="button">Download</button>
+          <button name="Live Demo" value="Live Demo" type="button" class="btn">Live Demo</button>
+          <button name="Download" value="Download" type="button" class="btn">Download</button>
         </div>
-        <P class="user-Manual">Click here to view <a href="#">Open HRMS User MAnual</a></P>
+        <P class="User-Manual">Click here to view <a href="#">Open HRMS User Manual</a></P>
       </div>
     </div>
-    <div class="visuals">
+
+    <!-- application -->
+    <div class="visuals d-flex">
       <div class="left">
-        <img src="openhrms-dashboard.png" alt="open-HRMS Deshboard">
+        <img src="openhrms-dashboard.png" alt="open-HRMS Deshboard" class="application-pic">
       </div>
       <div class="right">
-        <div class="deshboard-text">
+        <div class="deshboard-text text-wrap">
           A deep and complete view of essential HR KPIs. A visualls engaging way to provide executives the information
           they need.
-
-          <button name="videos" type="button" value="Videos">Videos</button>
+        </div>
+        <div class="video-btn">
+          <button name="videos" type="button" value="Videos" class="vid-btn">Videos <span
+              class="material-symbols-outlined">
+              chevron_right
+            </span></button>
         </div>
       </div>
     </div>
 
-
     <!-- hr features -->
-  <div class="features">
+    <div class="features">
+      <h2 class="display-4">
+        HR Features
+      </h2>
+      <div class="feature-component d-flex">
+        <div class="title text-wrap">
+          <span class="material-symbols-outlined icon">
+            handshake
+          </span>
+          <h6>Reeruitment</h6>
+          <p>An efficent applicant tracking system and dynamic recruiting sodtware.</p>
+        </div>
+        <div class="title text-wrap">
+          <span class="material-symbols-outlined icon">
+            database
+          </span>
+          <h6>Employee Database</h6>
+          <p>Centralised database to mange everything on your fingertip.</p>
+        </div>
+        <div class="title text-wrap">
+          <span class="material-symbols-outlined icon">
+            person
+          </span>
+          <h6>HR Administration</h6>
+          <p>Spend time on your gouls, not on routine administration</p>
+        </div>
 
-  </div>
-  </main> -->
+        <div class="title text-wrap">
+          <span class="material-symbols-outlined">
+            event_available
+          </span>
+          <h6>Attendance & leaves</h6>
+          <p>An intuitive attendance management ststem.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- software info -->
+    <div class="software-meta-info">
+      <div class="meta-data d-flex">
+        <div class="meta-desc">
+          <h3>27000+</h3>
+          <p>Downloads</p>
+        </div>
+        <div class="meta-desc">
+          <h3>30+</h3>
+          <p>Apps</p>
+        </div>
+        <div class="meta-desc">
+          <h3>100+</h3>
+          <p>countries</p>
+        </div>
+        <div class="meta-desc">
+          <h3>5</h3>
+          <p>Versions</p>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <!-- footer -->
-  <footer>
+  <!-- <footer>
     <div class="footer">
       <div class="flex d-flex">
         <div class="OpenHRMS-title d-flex">
@@ -137,53 +199,53 @@
         </div>
 
         <!-- quick links -->
-        <div class="quick-link">
-          <h4>Quick Link</h4>
-          <div class="link">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Blog</a>
-            <a href="#">Faq</a>
-            <a href="#">Documation</a>
-            <a href="#">Open HRMS Apps</a>
-            <a href="#">Become a partner</a>
-            <a href="#">Pricing</a>
-            <a href="#">Contact</a>
-            <a href="#">Site Map</a>
-          </div>
-        </div>
-
-        <!-- contact -->
-        <div class="contact-info">
-          <h4>Contact Information</h4>
-          <div class="contact-disc">
-            <p>Cybrosys Technologies Pvy. Ltd.</p>
-            <p>Neospace, Kinfra Techno Park.</p>
-            <p>Kakkancherry, Calicut University P.O.,</p>
-            <p>Kerla, India - 673635</p>
-          </div>
-          <hr>
-          <div class="contact-disc">
-            <p>Cybroys Limited</p>
-            <p>Alpha House, 100 Borough High Street, </p>
-            <p>London, Greater London</p>
-            <p>SE1 1LB, United Kingdom</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- social meadia -->
-      <div class="social-media">
-        <img src="./New folder/twitter.png" alt="twitter" class="media-link">
-        <img src="./New folder/youtube.png" alt="youtube" class="media-link">
-        <img src="./New folder/facebook.png" alt="facebook" class="media-link">
-        <img src="./New folder/pinterest.png" alt="pinterest" class="media-link">
-        <img src="./New folder/linkedin.png" alt="linkedin class=" media-link">
-      </div>
-
+  <div class="quick-link">
+    <h4>Quick Link</h4>
+    <div class="link">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Faq</a>
+      <a href="#">Documation</a>
+      <a href="#">Open HRMS Apps</a>
+      <a href="#">Become a partner</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+      <a href="#">Site Map</a>
     </div>
+  </div>
 
-  </footer>
+  <!-- contact -->
+  <div class="contact-info">
+    <h4>Contact Information</h4>
+    <div class="contact-disc">
+      <p>Cybrosys Technologies Pvy. Ltd.</p>
+      <p>Neospace, Kinfra Techno Park.</p>
+      <p>Kakkancherry, Calicut University P.O.,</p>
+      <p>Kerla, India - 673635</p>
+    </div>
+    <hr>
+    <div class="contact-disc">
+      <p>Cybroys Limited</p>
+      <p>Alpha House, 100 Borough High Street, </p>
+      <p>London, Greater London</p>
+      <p>SE1 1LB, United Kingdom</p>
+    </div>
+  </div>
+  </div>
+
+  <!-- social meadia -->
+  <div class="social-media">
+    <img src="./New folder/twitter.png" alt="twitter" class="media-link">
+    <img src="./New folder/youtube.png" alt="youtube" class="media-link">
+    <img src="./New folder/facebook.png" alt="facebook" class="media-link">
+    <img src="./New folder/pinterest.png" alt="pinterest" class="media-link">
+    <img src="./New folder/linkedin.png" alt="linkedin class=" media-link">
+  </div>
+
+  </div>
+
+  </footer> -->
 
 </body>
 

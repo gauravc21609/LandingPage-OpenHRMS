@@ -10,37 +10,62 @@
   --color: white;
   --main-heading-color: #8994c6;
   --footer-bg-color: #000000;
-  --nav-link:#588157;
+  --nav-link: #4d954c;
 }
 
-  .carousel {
-    background-image: url(/person-frontml.jpg);
-    height: 60vh;
-    min-height: 60%;
-    background-size: cover;
-    position: relative;
+.carousel {
+  background-image: url(/person-frontml.jpg);
+  height: 70vh;
+  min-height: 70%;
+  background-size: cover;
+  position: relative;
 }
 
 .carousel::after {
   content: "";
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 255, 0.7);
-  mix-blend-mode: multiply;
+  background-color: rgba(0, 0, 255, 0.4);
+  mix-blend-mode: multiply;
 }
-
 
 .carousel .navbar {
   position: relative;
   z-index: 2;
-  opacity: 1;
+  opacity: 10;
 }
 
-.calousel .caption{
+#carouselExampleSlidesOnly {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#carouselExampleSlidesOnly {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.carousel-inner .carousel-item > h2 {
+  font: 900;
+  font-weight: 900 !important;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: var(--color);
 }
 
 .container-fluid .navbar-brand {
@@ -50,67 +75,108 @@
   color: var(--color);
 }
 
-.nav-item .nav-link {
-  color: var(--color) !important ;
-  font-size: 500 !important;
-}
-
-.nav-item .nav-link:hover, .dropdown-menu .dropdown-item{
-  font-size: 550 !important;
-  color: #588157;
-}
-
-.container-fluid .nav-brand-pic{
+.container-fluid .nav-brand-pic {
   width: 30px;
   height: 30px;
   aspect-ratio: 1/1;
   object-fit: contain;
 }
 
-.captions .carosusel-caption-wraper > h3 {
-  font-size: 900;
-  color: var(--color);
-}
-
-
-
 .deshboard .manual {
   width: 100%;
-  height: 80vh;
-  margin: 4em auto;
-  background-color: red;
+  height: 40vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.manual > h4 {
-  margin: 2em auto;
+.deshboard .manual > h2 {
+  margin: 1em auto ;
   padding: auto;
   justify-content: center;
+  font-weight: 500 !important;
+  color: #8994c6;
 }
 
 .manual .button {
+  width: 500px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 4vh;
 }
 
-@media only screen and (max-width: 600px) {
-  .button {
-    flex-direction: column;
-    margin: 3em;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer-brand, flex{
-    display: flex;
-    flex-direction:row;
-  flex-wrap: wrap;
-  }
+.button .btn {
+  border: 3px solid rgba(0, 0, 255, 0.8);
+  padding: 12px 34px;
+  border-radius: 36px;
+  text-align: center;
+  display: inline-block;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+  background-color: var(--main-heading-color);
+  color: var(--color) ;
 }
 
-button[name: Live Demo] {
-
+.manual .User-Manual{
+  color: #8994c6;
 }
+
+.User-Manual > a{
+  color: var(--nav-link);
+  text-decoration: none;
+  font-size: 600 !important;
+  font-weight: 500 !important;
+}
+
+.visuals .left{
+  display: inline-block;
+  width: 50vw;
+}
+
+.left .application-pic{
+ object-fit: contain;
+ width: 100%;
+ height: 100%;
+}
+
+.visuals .right{
+  position: relative;
+  width: 50vw;
+}
+
+.right .deshboard-text{
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+justify-content: center;
+text-align: center;
+  max-width: 90%;
+}
+
+.right .video-btn{
+ position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+}
+
+.right .video-btn > button{
+  width: 200px;
+  border: none;
+  text-align: center;
+  display: flex;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+  color: #00438b ;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 footer > .footer {
   height: 50vh;
@@ -123,7 +189,7 @@ footer > .footer {
   z-index: 1;
 }
 
-.footer-brand-link .brand-pic{
+.footer-brand-link .brand-pic {
   width: 45px;
   height: 45px;
   aspect-ratio: 1/1;
@@ -131,12 +197,42 @@ footer > .footer {
   margin: 0 1em;
 }
 
-.OpenHRMS-title >.footer-brand-link{
+.OpenHRMS-title > .footer-brand-link {
   font-size: 800 !important;
-color: var(--color);
-text-decoration: none;
+  color: var(--color);
+  text-decoration: none;
 }
 
-.footer .flex{
- 
+.footer .flex {
+}
+
+@media only screen and (max-width: 600px) {
+  .button {
+    flex-direction: column;
+    margin: 3em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-brand,
+  flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .visuals{
+    display: flex;
+    flex-direction: column;
+     
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .visuals{
+    display: flex;
+    flex-direction: column;
+   min-width: 100%;
+  width: 100vw;
+  }
 }
