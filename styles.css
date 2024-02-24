@@ -29,7 +29,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 255, 0.4);
+  background-color: rgba(0, 0, 255, 0.5);
   mix-blend-mode: multiply;
 }
 
@@ -130,6 +130,10 @@
   font-weight: 500 !important;
 }
 
+.visuals{
+  margin: 6em auto;
+}
+
 .visuals .left{
   display: inline-block;
   width: 50vw;
@@ -176,17 +180,94 @@ text-align: center;
   justify-content: center;
 }
 
+.feature-component .title{
+  width: 25vw;
+  height:15em;
+  padding: 44px;
+  margin: 2em;
+ border-radius: 12px ;
+  text-align: center;
+  background-color: #cbcedd;
+}
+
+.title >span{
+  font-weight: 800;
+  /* display: inline-block; */
+  font-size: 700 !important;
+  color: #1d4065;
+  margin: 1vh auto;
+}
+
+.feature-component .title:hover{
+  background-color: #fff !important;
+  box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);
+}
+
+.features > h2{
+  text-align: center;
+  color: #00438b;
+  margin: 6vh auto;
+}
+
+.software-meta-info .meta-data{
+  width: 100vw;
+  background-color: #00438b;
+  padding: 20vh 0;
+}
+
+.meta-data .meta-desc{
+width: 25vw;
+text-align: center;
+}
+
+.meta-data .meta-desc>h3{
+  color: #fff;
+}
+
+.meta-data .meta-desc>p{
+  color: #fff;
+  font-size: 400  !important;
+}
 
 
-footer > .footer {
-  height: 50vh;
+.install-section {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 24px;
+}
+
+.install-section h2 {
+  font-weight: 600;
+  color: #524747;
+}
+
+.blue-effect-text {
+  color: var(--main-bg-color);
+  line-height: 32px;
+}
+
+.view-more-button {
+  border: none;
+  outline: none;
+  background-color: var(--buttom-color);
+  color: white;
+  padding: 6px 24px;
+  border-radius: 4px;
+}
+
+.footer > .footer-info {
+  height: 20em;
   width: 100%;
   background-color: var(--footer-bg-color);
   margin: 2vh auto;
   padding: 4vh auto;
-  display: flex;
-  position: absolute;
-  z-index: 1;
+}
+
+.footer-sub .wid-flx{
+  width: 33.33vw;
+  margin:2.5em;
 }
 
 .footer-brand-link .brand-pic {
@@ -197,42 +278,18 @@ footer > .footer {
   margin: 0 1em;
 }
 
-.OpenHRMS-title > .footer-brand-link {
-  font-size: 800 !important;
+.OpenHRMS-title > h2{
   color: var(--color);
   text-decoration: none;
 }
 
-.footer .flex {
+.social-media .media-link{
+ text-align: center;
+ font-size: 600  !important;
+color: #00438b;
+border: 4px solid rgb(173, 111, 111);
+border-radius: 50%;
+padding: 6px;
+margin: 0 1vw;
 }
 
-@media only screen and (max-width: 600px) {
-  .button {
-    flex-direction: column;
-    margin: 3em;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer-brand,
-  flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .visuals{
-    display: flex;
-    flex-direction: column;
-     
-  }
-}
-
-@media only screen and (max-width: 900px){
-  .visuals{
-    display: flex;
-    flex-direction: column;
-   min-width: 100%;
-  width: 100vw;
-  }
-}
