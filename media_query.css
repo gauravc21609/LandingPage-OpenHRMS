@@ -1,0 +1,134 @@
+@media only screen and (max-width: 600px) {
+  .button {
+    flex-direction: column;
+    margin: 3em;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-brand,
+  flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .visuals {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100%;
+    width: 100vw;
+    gap: 20px;
+  }
+
+  body {
+    min-width: 100%;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .visuals {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    width: 100vw;
+    /* gap: 5px; */
+  }
+
+  .visuals .left{
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    gap: 20px;
+  }
+
+  .visuals .right{
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    gap: 4vh;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  /* .features {
+    margin: 24px;
+  } */
+  .feature-component {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 5em;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .deshboard {
+    height: 60vh;
+  }
+
+  .feature-component .title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 5em;
+  }
+
+  .install-section {
+    display: block;
+  }
+
+  .whole-section {
+    display: block;
+  }
+
+  .whole-section > img {
+    width: 100%;
+  }
+
+  .footer-sub {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .footer-info {
+    height: 100%;
+  }
+
+  .footer-sub .wid-flx {
+    width: 100%;
+  }
+
+  body {
+    min-width: 100%;
+    overflow: hidden;
+  }
+
+  .OpenHRMS-title {
+    display: flex;
+    min-width: 100%;
+  }
+
+  .feature-component {
+    overflow: hidden;
+  }
+
+  .title > p {
+    overflow: hidden;
+  }
+}
+
+/* img {
+  display: block;
+  max-width: 100%;
+} */
