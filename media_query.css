@@ -23,10 +23,6 @@
     width: 100vw;
     gap: 20px;
   }
-/* 
-  .feature-component {
-    grid-template-columns: repeat(1 ,1fr);
-  } */
 
   body {
     min-width: 100%;
@@ -47,14 +43,14 @@
     /* gap: 5px; */
   }
 
-  .visuals .left{
+  .visuals .left {
     justify-content: center;
     align-items: center;
     min-width: 100%;
     gap: 20px;
   }
 
-  .visuals .right{
+  .visuals .right {
     justify-content: center;
     align-items: center;
     min-width: 100%;
@@ -67,7 +63,7 @@
     padding: 10vh 0;
     flex-direction: column;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     text-align: center;
     gap: 10px;
   }
@@ -80,11 +76,11 @@
     height: 80vh;
   }
 
-  .install-section{
+  .install-section {
     flex-direction: column;
   }
 
-  .install-section >img {
+  .install-section > img {
     min-width: 80%;
     object-fit: contain;
     justify-content: center;
@@ -93,11 +89,24 @@
 
   .whole-section {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
-  /* .whole-section > img {
+  .whole-section .img-bg {
     width: 100%;
-  } */
+  }
+
+  .whole-section > div {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  .whole-section:nth-child(even) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
   .footer-sub {
     display: flex;
@@ -105,33 +114,35 @@
     flex-wrap: wrap;
   }
 
-  .footer-info {
-    height: 100%;
-  }
-
-  .footer{
-    height: 100%;
-  }
-
   .footer-sub .wid-flx {
     width: 100%;
     padding: 4px 12px;
-
   }
 
   body {
     min-width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .OpenHRMS-title {
     display: flex;
     min-width: 100%;
+    gap: 8px;
+    align-items: flex-start;
+    /* float: inline-start !important; */
+  }
+
+  /* .footer{
+    height: fit-content;
+    block-size: fit-content;
+  } */
+
+  .OpenHRMS-title > h3{
+    
+    align-items: flex-start;
   }
 
   .title > p {
     overflow: hidden;
   }
 }
-
-

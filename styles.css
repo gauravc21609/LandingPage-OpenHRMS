@@ -7,7 +7,7 @@
 
 body {
   overflow-x: hidden;
-  }
+}
 
 :root {
   --main-bg-color: #1a5697;
@@ -143,7 +143,7 @@ body {
 }
 
 .visuals .right {
-display: flex;
+  display: flex;
   width: 50vw;
   justify-content: center;
   align-items: center;
@@ -155,7 +155,6 @@ display: flex;
 .right .video-btn > button {
   width: 200px;
   border: none;
-  /* min-height: ; */
   text-align: center;
   display: flex;
   font-size: 24px !important;
@@ -169,6 +168,9 @@ display: flex;
 .features {
   background-color: #d7d3d3;
   width: 100vw;
+  /* max-height: 40vh; */
+  margin: 4vh 0 0;
+  padding: 4vh 0;
 }
 
 .feature-component .title {
@@ -176,16 +178,15 @@ display: flex;
   height: 10em;
   min-height: 12em;
   padding: 20px;
-  /* margin: 1em; */
+  gap: 1em;
   border-radius: 12px;
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background-color: #cbcedd; */
 }
 
 .title > span {
   font-weight: 800;
-  /* display: inline-block; */
   font-size: 700 !important;
   color: #1d4065;
   margin: 1vh auto;
@@ -197,10 +198,10 @@ display: flex;
     0 8px 20px 0 rgba(38, 35, 74, 0.06);
 }
 
-.features >h2 {
+.features > h2 {
   text-align: center;
   color: #00438b;
-  margin: 6vh auto;
+  /* margin: 6vh auto; */
 }
 
 .software-meta-info .meta-data {
@@ -239,6 +240,7 @@ display: flex;
 .blue-effect-text {
   color: var(--main-bg-color);
   line-height: 32px;
+  text-align: justify;
 }
 
 .view-more-button {
@@ -251,28 +253,25 @@ display: flex;
 }
 
 .whole-section {
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
+  gap: 48px;
   align-items: center;
   justify-content: center;
+  text-align: justify;
   /* gap: 20px; */
-  /* text-align: justify; */
-  margin: 6vh auto;
+  /* margin: 6vh auto; */
 }
-
-.whole-section .img-bg{
-  background-image: url('https://img.freepik.com/free-photo/html-system-website-concept_23-2150376772.jpg?w=826&t=st=1708754631~exp=1708755231~hmac=e2a6bd2e26d3815b79b15bc59adf037fbc7a52bedac5375f7b1fa11844a48cc4');
+.whole-section .img-bg {
+  background-image: url("https://img.freepik.com/free-photo/html-system-website-concept_23-2150376772.jpg?w=826&t=st=1708754631~exp=1708755231~hmac=e2a6bd2e26d3815b79b15bc59adf037fbc7a52bedac5375f7b1fa11844a48cc4");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  /* background-repeat: cover; */
-  /* background-size: cover; */
-  background-position: center;
-  width: 100vw;
+  background-position: right;
+  background-size: cover;
+  width: 50%;
   height: 80vh;
-  /* min-height: 60% ; */
   position: relative;
 }
-
 .img-bg::after {
   content: "";
   position: absolute;
@@ -280,32 +279,52 @@ display: flex;
   top: 0;
   left: 0;
   height: 60%;
-  width: 100vw;
-  min-width: 100%;
-  /* background-color: rgba(0, 0, 255, 0.4); */
+  width: 50vw;
+  min-width: 50%;
+  /* background-color: rgba(0, 0, 255, 0.5); */
   mix-blend-mode: multiply;
 }
-
-.whole-section> img {
+.whole-section > img {
   width: 50%;
   background-size: cover;
-  
 }
+.whole-section > div {
+  width: 50%;
+  text-align: justify;
+}
+
+.img-bg .overlay-heading{
+  position: absolute;
+  z-index: 1;
+}
+
+.overlay-heading > h3{
+  margin: auto;
+  width: fit-content;
+  block-size: fit-content;
+  border: 3px solid #ffffff;
+  padding: 6vh;
+  color: #ffffff;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+}
+
 .whole-section h2 {
   color: #00438b;
 }
 
 .footer > .footer-info {
-  height: 32em;
+  height: auto;
   width: 100%;
   background-color: var(--footer-bg-color);
-  margin: 4vh auto 0;
-  padding: 4vh auto;
+  margin: 4vh 0 0 0;
+  padding: 2vh 0;
 }
 
 .footer-sub .wid-flx {
   width: 33vw;
-  margin: 2.5em;
+  /* padding: 4vh; */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -313,7 +332,8 @@ display: flex;
 
 .OpenHRMS-title .openHRMS-disc > p {
   color: white;
-  padding: 6px;
+  /* padding: 6px; */
+  text-align: justify;
 }
 
 .footer-brand-link .brand-pic {
@@ -321,7 +341,7 @@ display: flex;
   height: 45px;
   aspect-ratio: 1/1;
   object-fit: contain;
-  margin: 0 1em;
+  margin: 0 0.5em;
 }
 
 .quick-link {
@@ -338,7 +358,7 @@ display: flex;
 
 .wid-flx > h3 {
   color: white;
-  margin-bottom: 2vh;
+  margin: 2vh 0;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -356,7 +376,7 @@ display: flex;
 }
 
 .social-media {
-  margin: 4vh;
+  margin: 4vh 0;
 }
 
 .social-media .media-link {
@@ -373,10 +393,3 @@ display: flex;
   color: white;
 }
 
-.whole-section  {
- width: 100vw
-}
-
-.whole-section > img{
-  
-}
