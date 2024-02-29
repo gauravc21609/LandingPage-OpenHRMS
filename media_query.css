@@ -6,6 +6,21 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
+  }
+
+  .deshboard {
+    height: auto !important;
+    margin-bottom: 6rem;
+  }
+
+  .manual .button{
+    margin-bottom: 4svh;
+  }
+
+  .manual .User-manual{
+    margin: 4vh ;
+    min-height: 8vh;
   }
 
   .footer-brand,
@@ -31,15 +46,32 @@
   .carousel {
     width: 100%;
   }
+
+  .manual .button{
+    width: fit-content;
+  }
 }
 
 @media only screen and (max-width: 900px) {
+  body {
+    min-width: 100%;
+    /* overflow: hidden; */
+  }
+
+  .whole-section .img-bg{
+    min-width: fit-content;
+  }
+
+  .whole-section .img-bg > h3{
+    min-width: fit-content;
+  }
+
   .visuals {
     display: block;
     flex-direction: column;
     min-width: 100%;
     width: 100vw;
-    min-height: 100vh;
+    min-height: 65vh;
     /* gap: 5px; */
   }
 
@@ -78,13 +110,16 @@
 
   .install-section {
     flex-direction: column;
+    width: auto;
   }
 
   .install-section > img {
-    min-width: 80%;
+    width: 100%;
+    height: auto;
     object-fit: contain;
-    justify-content: center;
-    align-items: center;
+    /* overflow-x: hidden; */
+    /* justify-content: center;
+    align-items: center; */
   }
 
   .whole-section {
@@ -93,6 +128,10 @@
     align-items: center;
     width: 100%;
   }
+
+.button{
+  flex-direction: column;
+}
 
   .whole-section .img-bg {
     width: 100%;
@@ -118,31 +157,30 @@
     width: 100%;
     padding: 4px 12px;
   }
-
-  body {
-    min-width: 100%;
-    /* overflow: hidden; */
-  }
-
-  .OpenHRMS-title {
-    display: flex;
-    min-width: 100%;
-    gap: 8px;
-    align-items: flex-start;
-    /* float: inline-start !important; */
-  }
-
-  /* .footer{
-    height: fit-content;
-    block-size: fit-content;
-  } */
-
-  .OpenHRMS-title > h3{
-    
-    align-items: flex-start;
-  }
-
+/* 
   .title > p {
     overflow: hidden;
+  } */
+
+  .feature-component .title{
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 250px ){
+  .OpenHRMS-title > h3{
+    word-break: break-word;
+  }
+
+  body{
+    word-break: break-word;
+  }
+}
+
+@media only screen and (max-width: 750px ){
+  .feature-component{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
